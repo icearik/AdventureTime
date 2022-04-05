@@ -1,0 +1,67 @@
+<!-- Ilyar Aisarov CSE383 Final Project -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>History</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="page3.js?rev1"></script>
+    <link rel="stylesheet" href="mastyle.css?rev1">
+</head>
+
+<body>
+    <div class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="page1.html">AdventureTime</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="page1.html">Home</a></li>
+                <li><a href="page2.html">Directions</a></li>
+                <li class="active"><a href="#">History</a></li>
+            </ul>
+        </div>
+    </div>
+    <form class="container-fluid navbar-inverse pad">
+        <label class="label label1">Get History</label>
+        <div class="form-group row pad">
+            <div class="col-sm-1">
+                <label class="label" for="date">Enter the Date:</label>
+            </div>
+            <div class="col-sm-5">
+                <input type="date" class="form-control " id="date" placeholder="Date" value="2021-11-17" required />
+            </div>
+        </div>
+        <div class="form-group row pad">
+            <div class="col-sm-1">
+                <label class="label" for="maxNum">Maximum Listings:</label>
+            </div>
+            <div class="col-sm-5">
+                <input type="number" class="form-control" id="maxNum" placeholder="Max Number Of Lines" min=1 value="1" required />
+            </div>
+        </div>
+        <div class="form-group row pad">
+            <div class="col-sm-3">
+                <input type="button" class="btn btn-success" id="btn" value="Get History" onclick="hist()" />
+            </div>
+        </div>
+    </form>
+    <div id="tableDiv">
+        <table id="tbl" class="table pad">
+            <thead id="hd" class="navbar-inverse">
+            </thead>
+            <tbody id="bd">
+            </tbody>
+        </table>
+    </div>
+        <div id="outp2" class="container text-center"></div>
+    <footer class="text-center">
+        <p>Ilyar Aisarov <br>CSE 383 <br>Final Project</p>
+    </footer>
+</body>
+
+</html>
